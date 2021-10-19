@@ -87,4 +87,4 @@ production:
   database: bm6_production
   username: postgres
   host: postgres-01.cawdzlpmk1kv.us-east-1.rds.amazonaws.com
-  password: mypassword
+  password: <%= ENV['PROD_DB_PASSWORD'] %>
